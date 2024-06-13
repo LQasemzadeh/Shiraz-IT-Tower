@@ -1,39 +1,45 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
 import Logo from "../../assets/website/SITT.png"
+import {FaTimes} from "react-icons/fa";
+import {CiMenuFries} from "react-icons/ci";
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+    const handleClick = () => {
+        setClick(!click);
+    }
     const content = <>
         <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-800 transition">
             <ul className="text-center text-xl p-20">
                 <NavLink to="/"
                          spy={true} smooth={true}
-                className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                className="my-4 py-4 text-white border-b border-slate-800 hover:bg-slate-800 hover:rounded">
                     <li>خانه</li>
                 </NavLink>
                 <NavLink to="/"
                          spy={true} smooth={true}
-                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                         className="my-4 py-4 text-white border-b border-slate-800 hover:bg-slate-800 hover:rounded">
                     <li>پروژه‌ها</li>
                 </NavLink>
                 <NavLink to="/"
                          spy={true} smooth={true}
-                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                         className="my-4 py-4 text-white border-b border-slate-800 hover:bg-slate-800 hover:rounded">
                     <li>خدمات</li>
                 </NavLink>
                 <NavLink to="/"
                          spy={true} smooth={true}
-                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                         className="my-4 py-4 text-white border-b border-slate-800 hover:bg-slate-800 hover:rounded">
                     <li>مجله ما</li>
                 </NavLink>
                 <NavLink to="/"
                          spy={true} smooth={true}
-                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                         className="my-4 py-4 text-white border-b border-slate-800 hover:bg-slate-800 hover:rounded">
                     <li>درباره ما</li>
                 </NavLink>
                 <NavLink to="/"
                          spy={true} smooth={true}
-                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                         className="my-4 py-4 text-white border-b border-slate-800 hover:bg-slate-800 hover:rounded">
                     <li>تماس با ما</li>
                 </NavLink>
             </ul>
@@ -82,8 +88,15 @@ const Navbar = () => {
                     </ul>
                     </div>
                 </div>
-            </div>
 
+                <div>
+                    {click && content}
+                </div>
+                <button className="block sm:hidden transition" onClick={handleClick}>
+                    {click ? <FaTimes style={{color: "#2d3748"}}/> : <CiMenuFries style={{color: "#2d3748"}}/>}
+                </button>
+
+            </div>
         </nav>
 
     );
