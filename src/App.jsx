@@ -1,15 +1,15 @@
 import React from 'react';
-import Navbar from "../src/components/Navbar.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 
 const App = () => {
     return (
-        <>
-        <div>
-            <Navbar />
-            
-        </div>
-        </>
+        <Router>
+            <div>
+                <Navbar />
+            </div>
+        </Router>
     );
 };
 
