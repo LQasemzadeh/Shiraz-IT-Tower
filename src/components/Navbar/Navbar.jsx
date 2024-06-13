@@ -1,140 +1,90 @@
-import React, { useState } from 'react';
-import { Disclosure } from '@headlessui/react';
-
-import { HiMenuAlt2 } from "react-icons/hi";
-import { NavLink } from 'react-router-dom';
-import Logo from "../../assets/website/SITT.png";
-import { FaCaretDown } from "react-icons/fa";
-import DarkMode from "../../components/Navbar/DarkMode.jsx";
-
-
-
-
+import React from 'react';
+import {NavLink} from "react-router-dom";
+import Logo from "../../assets/website/SITT.png"
 
 const Navbar = () => {
+    const content = <>
+        <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-800 transition">
+            <ul className="text-center text-xl p-20">
+                <NavLink to="/"
+                         spy={true} smooth={true}
+                className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                    <li>خانه</li>
+                </NavLink>
+                <NavLink to="/"
+                         spy={true} smooth={true}
+                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                    <li>پروژه‌ها</li>
+                </NavLink>
+                <NavLink to="/"
+                         spy={true} smooth={true}
+                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                    <li>خدمات</li>
+                </NavLink>
+                <NavLink to="/"
+                         spy={true} smooth={true}
+                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                    <li>مجله ما</li>
+                </NavLink>
+                <NavLink to="/"
+                         spy={true} smooth={true}
+                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                    <li>درباره ما</li>
+                </NavLink>
+                <NavLink to="/"
+                         spy={true} smooth={true}
+                         className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+                    <li>تماس با ما</li>
+                </NavLink>
+            </ul>
+        </div>
 
-
+    </>
     return (
-
-        <nav className="fixed top-0 w-full z-10 bg-white shadow-lg">
-            <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-12">
-                <div className="flex h-16 justify-between">
-                    <div className="flex">
-
-                    <NavLink to="/">
-                        <img src={Logo} alt="برج الکترونیک شیراز"
-                             className="h-10 w-auto pt-3 cursor-pointer"/>
-                    </NavLink>
-
-                    <NavLink to="/"
-                    className="flex py-4 px-4 hover:text-primary duration-200">
-                        خانه
-                    </NavLink>
-                    <NavLink to="/"
-                     className="flex py-4 px-4 hover:text-primary duration-200">
-                        پروژه‌ها
-                    </NavLink>
-                    <NavLink to="/"
-                     className="inline-block py-4 px-4 hover:text-primary duration-200">
-                        خدمات
-                    </NavLink>
-                    <NavLink to="/"
-                    className="inline-block py-4 px-4 hover:text-primary duration-200">
-                        مجله‌ما
-                    </NavLink>
-                    <NavLink to="/"
-                     className="inline-block py-4 px-4 hover:text-primary duration-200">
-                        درباره‌ما
-                    </NavLink>
-                    <NavLink to="/"
-                    className="inline-block py-4 px-4 hover:text-primary duration-200">
-                        ارتباط با ما
-                    </NavLink>
+        <nav className="bg-white shadow-lg">
+            <div className="h-10vh flex justify-between z-50 text-gray-900 lg:py-5 px-20 py-4 flex-1">
+                <div className="flex items-center flex-1">
+                    <img src={Logo} className="w-14" />
+                </div>
+                <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
+                    <div className="flex-10">
+                    <ul className="flex gap-8 mr-16 text-[14px]">
+                        <NavLink to="/"
+                                 spy={true} smooth={true}
+                        className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
+                            <li>خانه</li>
+                        </NavLink>
+                        <NavLink to="/"
+                                 spy={true} smooth={true}
+                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
+                            <li>پروژه‌ها</li>
+                        </NavLink>
+                        <NavLink to="/"
+                                 spy={true} smooth={true}
+                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
+                            <li>خدمات</li>
+                        </NavLink>
+                        <NavLink to="/"
+                                 spy={true} smooth={true}
+                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
+                            <li>مجله ما</li>
+                        </NavLink>
+                        <NavLink to="/"
+                                 spy={true} smooth={true}
+                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
+                            <li>درباره ما</li>
+                        </NavLink>
+                        <NavLink to="/"
+                                 spy={true} smooth={true}
+                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
+                            <li>تماس با ما</li>
+                        </NavLink>
+                    </ul>
                     </div>
-
-                    <div className="flex">
-                        <div className="inline-block py-4 px-4">
-                            <DarkMode />
-                        </div>
-
-                        <div className="inline-block py-4 px-4 hover:text-primary duration-200">
-                            <button
-                                className="relative flex rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-105
-                        duration-200 text-sm text-white py-1 px-4">
-                                پنل‌ها
-                                <FaCaretDown
-                                    className="cursor-pointer transition-all duration-200 group-hover:rotate-180"/>
-                            </button>
-                        </div>
-
-                    </div>
-
-
-                    <div className="-ml-2 mr-2 flex items-center md:hidden">
-                        <Disclosure.Button
-
-                            className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                            <span className="absolute -inset-0.5"/>
-                            <span className="sr-only">Open main menu</span>
-                            {open ? (
-                                <HiMenuAlt2 className="block h-6 w-6" aria-hidden="true"/>
-                            ) : (
-                                <HiMenuAlt2 className="block h-6 w-6" aria-hidden="true"/>
-                            )}
-                        </Disclosure.Button>
-
-                            <NavLink to="/">
-                                <img src={Logo} alt="برج الکترونیک شیراز"
-                                     className="h-10 w-auto pt-3 cursor-pointer"/>
-                            </NavLink>
-
-                            <NavLink to="/"
-                                     className="flex py-4 px-4 hover:text-primary duration-200">
-                                خانه
-                            </NavLink>
-                            <NavLink to="/"
-                                     className="flex py-4 px-4 hover:text-primary duration-200">
-                                پروژه‌ها
-                            </NavLink>
-                            <NavLink to="/"
-                                     className="inline-block py-4 px-4 hover:text-primary duration-200">
-                                خدمات
-                            </NavLink>
-                            <NavLink to="/"
-                                     className="inline-block py-4 px-4 hover:text-primary duration-200">
-                                مجله‌ما
-                            </NavLink>
-                            <NavLink to="/"
-                                     className="inline-block py-4 px-4 hover:text-primary duration-200">
-                                درباره‌ما
-                            </NavLink>
-                            <NavLink to="/"
-                                     className="inline-block py-4 px-4 hover:text-primary duration-200">
-                                ارتباط با ما
-                            </NavLink>
-                        </div>
-
-                        <div className="flex">
-                            <div className="inline-block py-4 px-4">
-                                <DarkMode />
-                            </div>
-
-                            <div className="inline-block py-4 px-4 hover:text-primary duration-200">
-                                <button
-                                    className="relative flex rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-105
-                        duration-200 text-sm text-white py-1 px-4">
-                                    پنل‌ها
-                                    <FaCaretDown
-                                        className="cursor-pointer transition-all duration-200 group-hover:rotate-180"/>
-                                </button>
-                            </div>
-
-                        </div>
-
                 </div>
             </div>
-        </nav>
 
+        </nav>
 
     );
 };
