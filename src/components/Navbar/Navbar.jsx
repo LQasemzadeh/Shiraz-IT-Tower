@@ -14,7 +14,7 @@ const Navbar = () => {
             <ul className="text-center text-xl p-20">
                 <NavLink to="/"
                          spy={true} smooth={true}
-                className="inline-block text-white w-full rounded-md p-2 hover:bg-[#ff9501]">
+                         className="inline-block text-white w-full rounded-md p-2 hover:bg-[#ff9501]">
                     <li>خانه</li>
                 </NavLink>
                 <NavLink to="/"
@@ -43,57 +43,65 @@ const Navbar = () => {
                     <li>تماس با ما</li>
                 </NavLink>
             </ul>
+
         </div>
 
     </>
     return (
         <nav className="bg-white shadow-lg">
             <div className="h-10vh flex justify-between z-50 text-gray-900 lg:py-5 px-20 py-4 flex-1">
-                <div className="flex items-center flex-1">
-                    <img src={Logo} className="w-14" />
+                <div className="flex items-center">
+                    <img src={Logo} className="w-16" />
                 </div>
-                <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
+                <div className="lg:flex md:flex lg:flex-1 items-center justify-between font-normal hidden">
                     <div className="flex-10">
-                    <ul className="flex gap-8 mr-16 text-[14px]">
-                        <NavLink to="/"
-                                 spy={true} smooth={true}
-                        className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
-                            <li>خانه</li>
-                        </NavLink>
-                        <NavLink to="/"
-                                 spy={true} smooth={true}
-                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
-                            <li>پروژه‌ها</li>
-                        </NavLink>
-                        <NavLink to="/"
-                                 spy={true} smooth={true}
-                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
-                            <li>خدمات</li>
-                        </NavLink>
-                        <NavLink to="/"
-                                 spy={true} smooth={true}
-                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
-                            <li>مجله ما</li>
-                        </NavLink>
-                        <NavLink to="/"
-                                 spy={true} smooth={true}
-                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
-                            <li>درباره ما</li>
-                        </NavLink>
-                        <NavLink to="/"
-                                 spy={true} smooth={true}
-                                 className="hover:text-fuchsia-600 transition hover:border-b-2 hover:border-fuchsia-600 cursor-pointe">
-                            <li>تماس با ما</li>
-                        </NavLink>
-                    </ul>
+                        <ul className="flex gap-8 mr-10 text-[14px]">
+                            <NavLink to="/"
+                                     spy={true} smooth={true}
+                                     className="hover:text-[#ff9501] transition hover:border-b-2 hover:border-[#ff9501] cursor-pointe">
+                                <li>خانه</li>
+                            </NavLink>
+                            <NavLink to="/"
+                                     spy={true} smooth={true}
+                                     className="hover:text-[#ff9501] transition hover:border-b-2 hover:border-[#ff9501] cursor-pointe">
+                                <li>پروژه‌ها</li>
+                            </NavLink>
+                            <NavLink to="/"
+                                     spy={true} smooth={true}
+                                     className="hover:text-[#ff9501] transition hover:border-b-2 hover:border-[#ff9501] cursor-pointe">
+                                <li>خدمات</li>
+                            </NavLink>
+                            <NavLink to="/"
+                                     spy={true} smooth={true}
+                                     className="hover:text-[#ff9501] transition hover:border-b-2 hover:border-[#ff9501] cursor-pointe">
+                                <li>مجله ما</li>
+                            </NavLink>
+                            <NavLink to="/"
+                                     spy={true} smooth={true}
+                                     className="hover:text-[#ff9501] transition hover:border-b-2 hover:border-[#ff9501] cursor-pointe">
+                                <li>درباره ما</li>
+                            </NavLink>
+                            <NavLink to="/"
+                                     spy={true} smooth={true}
+                                     className="hover:text-[#ff9501] transition hover:border-b-2 hover:border-[#ff9501] cursor-pointe">
+                                <li>تماس با ما</li>
+                            </NavLink>
+                        </ul>
                     </div>
+                    <button
+                        className="bg-gradient-to-r from-orange-700 to-orange-400 hover:scale-105 duration-200 text-white py-1 px-8 rounded-full flex items-center"
+                    >
+                        پنل‌ها
+
+                    </button>
                 </div>
 
                 <div>
                     {click && content}
                 </div>
                 <button className="block md:hidden transition" onClick={handleClick}>
-                    {click ? <FaTimes style={{color: "#352d22", fontSize: "24px", fontWeight: "bold"}}/> : <TfiAlignJustify style={{color: "#352d22", fontSize: "24px", fontWeight: "bold"}}/>}
+                    {click ? <FaTimes style={{color: "#352d22", fontSize: "24px", fontWeight: "bold"}}/> :
+                        <TfiAlignJustify style={{color: "#352d22", fontSize: "24px", fontWeight: "bold"}}/>}
                 </button>
 
             </div>
