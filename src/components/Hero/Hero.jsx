@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ITtower from "../../assets/ITpic/ITtower.webp";
+import Operation from "../../assets/ITpic/operation.webp"
 import DataCenter from "../../assets/ITpic/data-center.webp";
 import SMSpanel from "../../assets/ITpic/sms_panel.webp";
+import Vector from "../../assets/website/blue-pattern.png";
 
 
 
@@ -9,10 +11,10 @@ import SMSpanel from "../../assets/ITpic/sms_panel.webp";
 const ImageList = [
     {
         id: 1,
-        img: ITtower,
-        title: "برج IT شیراز",
+        img: Operation,
+        title: "برج IT شیراز بهره‌برداری شد",
         description:
-            "شرکت برج الکترونیک شیراز با هدف گسترش کاربرد فناوری اطلاعات و ارتباطات در کشور و جلب سرمایه‌گذاری خارجی با بهره‌گیری از فرصت‌ها و ظرفیت‌های ارزشمند استان فارس در سال 1383 به عنوان نخستین برج الکترونیک کشور در شیراز تأسیس شد.",
+            "دیتاسنتر برج الکترونیک شیراز به عنوان نخستین مرکز داده دارای مجوز رسمی از وزارت ارتباطات و فناوری اطلاعات در جنوب کشور با حضور جمعی از مسئولان افتتاح شد.",
     },
     {
         id: 2,
@@ -33,10 +35,10 @@ const ImageList = [
 
 const Hero = ({ handleOrderPopup }) => {
 
-    const [imageId, setImageId] = React.useState(Book1);
-    const [title, setTitle] = React.useState("His Life will forever be Changed");
-    const [description, setDescription] = React.useState(
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    const [imageId, setImageId] = useState(ITtower);
+    const [title, setTitle] = useState("برج IT شیراز");
+    const [description, setDescription] = useState(
+        "شرکت برج الکترونیک شیراز با هدف گسترش کاربرد فناوری اطلاعات و ارتباطات در کشور و جلب سرمایه‌گذاری خارجی با بهره‌گیری از فرصت‌ها و ظرفیت‌های ارزشمند استان فارس در سال 1383 به عنوان نخستین برج الکترونیک کشور در شیراز تأسیس شد."
     );
 
     const bgImage = {
@@ -50,7 +52,7 @@ const Hero = ({ handleOrderPopup }) => {
 
 
     return <>
-        <div className="min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center
+        <div className="min-h-[350px] sm:min-h-[540px] bg-gray-100 flex justify-center
          items-center dark:bg-gray-950 dark:text-white duration-200"
              style={bgImage}>
             <div className="container pb-8 sm:pb-0">
@@ -63,7 +65,7 @@ const Hero = ({ handleOrderPopup }) => {
                             data-aos="zoom-out"
                             data-aos-duration="500"
                             data-aos-once="true"
-                            className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+                            className="text-base sm:text-lg lg:text-2xl font-bold">
                             {title}
                         <p className="bg-clip-text text-transparent
                         bg-gradient-to-b from-orange-700 text-left text-sm to-orange-400">
@@ -87,11 +89,36 @@ const Hero = ({ handleOrderPopup }) => {
                         </div>
                     </div>
                     {/* image section */}
-                        <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative
+                    <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative
                         order-1 sm:order-2 ">
-                            <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
-
-                            </div>
+                        <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
+                            <img
+                                data-aos="zoom-in"
+                                data-aos-once="true"
+                                src={imageId}
+                                alt="biryani img"
+                                className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
+                            />
+                        </div>
+                        <div
+                            className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-left-1">
+                            {ImageList.map((item) => (
+                                <img
+                                    data-aos="zoom-in"
+                                    data-aos-once="true"
+                                    src={item.img}
+                                    onClick={() => {
+                                        setImageId(
+                                            item.id === 1 ? Operation : item.id === 2 ? DataCenter : SMSpanel
+                                        );
+                                        setTitle(item.title);
+                                        setDescription(item.description);
+                                    }}
+                                    alt="biryani img"
+                                    className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
