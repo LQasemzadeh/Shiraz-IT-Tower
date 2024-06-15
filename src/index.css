@@ -4,30 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer utilities {
-    .duration-high {
-        @apply transition-all duration-300 ease-in-out;
+@layer base {
+    li {
+        @apply p-4
     }
-}
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
+    button {
+        @apply text-white border-2 bg-[#ff9500] border-[#352d22]
+        hover:bg-transparent hover:text-[#352d22] rounded-md
     }
-    to {
-        transform: rotate(360deg);
-    }
-}
-.spin {
-    animation: spin 40s linear infinite;
-}
-
-/* smooth scroll*/
-html {
-    scroll-behavior: smooth;
-}
-
-::selection {
-    @apply bg-primary text-white;
 }
