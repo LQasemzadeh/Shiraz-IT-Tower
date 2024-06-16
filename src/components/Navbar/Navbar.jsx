@@ -23,7 +23,7 @@ const Navbar = () => {
                 </div>
                 <div className="hidden md:flex pr-4">
                     <button className="px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
-        hover:bg-transparent hover:text-[#352d22] rounded-md">پنل‌ها</button>
+        hover:bg-transparent hover:text-[#352d22] rounded-full">پنل‌ها</button>
                 </div>
                 <div className="md:hidden"
                      onClick={handleClick}
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </li>
                 <div className="flex flex-col my-4">
                     <button className="px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
-        hover:bg-transparent hover:text-[#352d22] rounded-md">پنل‌ها</button>
+        hover:bg-transparent hover:text-[#352d22] rounded-full">پنل‌ها</button>
                 </div>
             </ul>
         </div>
