@@ -23,8 +23,8 @@ const AdsBar = () => {
     };
 
     return (
-        <div className="bg-white">
-            <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
+        <div className="bg-orange-50">
+            <div className="mx-auto max-w-lg px-5 py-5 sm:px-6 sm:py-12 lg:max-w-lg lg:px-4 lg:py-2 scrollbar-hide">
                 <div className="mainContainer">
                     <Slider {...settings}>
                         <div className="container">
@@ -39,9 +39,7 @@ const AdsBar = () => {
                         <div className="container">
                             <img src={layer} alt="Pasargad"/>
                         </div>
-
                     </Slider>
-
                 </div>
             </div>
         </div>

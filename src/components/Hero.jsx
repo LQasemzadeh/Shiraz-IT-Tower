@@ -1,7 +1,11 @@
 import React from 'react';
 import hero from "../assets/images/hero.png";
 
+
 const Hero = () => {
+
+
+
     const name = "شرکت برج الکترونیک شیراز";
     const businessImproveMessage = "هر آنچه برای بهبود کسب و کار خود نیاز دارید برج الکترونیک شیراز فراهم کرده است.";
 
@@ -30,7 +34,11 @@ const Hero = () => {
                      data-aos="slide-up"
                      className="w-4/5 mx-auto" width="600" height="300" />
             </div>
+
+
+
         </div>
+
     );
 };
 export default Hero;
