@@ -23,7 +23,7 @@ const AdsBar = () => {
     };
 
     return (
-        <div className="bg-orange-50">
+        <div className="bg-white">
             <div className="mx-auto max-w-lg px-5 py-5 sm:px-6 sm:py-12 lg:max-w-lg lg:px-4 lg:py-2 scrollbar-hide">
                 <div className="mainContainer">
                     <Slider {...settings}>
