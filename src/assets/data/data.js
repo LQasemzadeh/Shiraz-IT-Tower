@@ -15,34 +15,34 @@ export const data = {
             colorLite: "#ffedef",
             title: "پنل پیامک برج الکترونیک شیراز",
             subtitle:
-                "شرکت برج الکترونیک شیراز سرویس‌های پیام‌دهی تحت وب با واسط کاربری ساده و کارآمد برای سازمان‌ها ارائه می‌دهد. این سرویس‌ها شامل ارسال پیامک به فرد یا گروه، برنامه‌ریزی ارسال پیامک در زمان تعیین شده، ارسال پیامک تبریک، برگزاری مسابقه و نظرسنجی از طریق پیامک است. کاربران می‌توانند پیامک‌های خود را مشاهده کرده، وضعیت ارسال پیامک‌ها را کنترل و گزارش‌های مختلف با فرمت Excel را دریافت کنند. این شرکت علاوه بر سرویس‌های آماده تحت وب، راه حل‌های حرفه‌ای دیگر در زمینه پیامدهی نیز ارائه می‌دهد.",
+                "شرکت برج الکترونیک شیراز سرویس‌های پیام‌دهی تحت وب با واسط کاربری ساده و کارآمد برای سازمان‌ها ارائه می‌دهد.",
         },
         {
             id: 2,
             img: ittower,
             colorDeep: "#004aab",
             colorLite: "#d3dce0",
-            title: "Pay with crypto",
+            title: "برج IT شیراز",
             subtitle:
-                "Experience the future of payments with our crypto payment option. Pay with popular cryptocurrencies for a fast and secure checkout process.",
+                " برج آی تی با افزایش ارتفاع به ۱۱ طبقه با هدف میزبانی از تمام سایتهای کشور اقدام به استقرار مرکز داده یا دیتاسنتر در طبقه دهم کرده است.",
         },
         {
             id: 3,
             img: datacenter,
             colorDeep: "#2d9c3d",
             colorLite: "#c7f8cf",
-            title: "Pay with cash",
+            title: "دیتا سنتر برج الکترونیک شیراز",
             subtitle:
-                "Prefer to pay with cash? No problem! Select the 'Pay with Cash' option at checkout and finalize your purchase in person, ensuring a seamless transaction",
+                "شرکت برج الکترونیک شیراز، در جنوب کشور به عنوان یکی از 5 مرکز داده مورد تایید در سطح کشور می باشد.",
         },
         {
             id: 4,
             img: conference,
-            colorDeep: "#2d9c3d",
-            colorLite: "#c7f8cf",
-            title: "Pay with cash",
+            colorDeep: "#f39733",
+            colorLite: "#eecdb0",
+            title: "سالن اجتماعات هوشمند",
             subtitle:
-                "Prefer to pay with cash? No problem! Select the 'Pay with Cash' option at checkout and finalize your purchase in person, ensuring a seamless transaction",
+                "شرکت برج الکترونیک شیراز، برخوردار از یکی از نوین ترین سالن های هوشمند اجتماعات در حنوب کشور است.",
         },
     ],
 };
