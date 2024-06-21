@@ -2,13 +2,25 @@ import React, {useState} from 'react';
 import { FiAlignJustify, FiX } from "react-icons/fi";
 import Logo from "../../assets/images/SITT.png"
 import { Link } from 'react-router-dom';
+import "../../components/Navbar/Navbar.css";
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
+    const [navbar, setNavbar] = useState(false);
     const handleClick = () => setNav(!nav)
 
+    const changeBackground = () => {
+        if(window.scrollY >=80) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+     window.addEventListener('scroll', changeBackground);
+
     return (
-        <div className="w-screen h-[70px] z-10 bg-zinc-200 fixed drop-shadow-lg">
+        <div className={navbar ? 'navbar active' : 'navbar'}>
             <div className="px-14 flex justify-between items-center w-full h-full">
                 <div className="flex items-center">
                     <img src={Logo} className="h-8 w-auto"/>

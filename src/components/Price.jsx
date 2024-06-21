@@ -2,6 +2,7 @@ import React from 'react';
 import { FcCheckmark } from "react-icons/fc";
 import smspanel from "../../src/assets/images/smspanel.webp";
 
+
 const Price = () => {
     return (
         <div className="isolate overflow-hidden bg-gray-900">
