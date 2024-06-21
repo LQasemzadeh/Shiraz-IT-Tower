@@ -1,7 +1,7 @@
-import sms from "../../assets/images/sms_panel.webp";
-import ittower from "../../assets/images/ITtower.webp";
-import datacenter from "../../assets/images/data-center.webp";
-import conference from "../../assets/images/conference_hall.webp";
+import sms from "../images/projects/sms_panel.webp";
+import ittower from "../images/projects/ITtower.webp";
+import datacenter from "../../assets/images/projects/data-center.webp";
+import conference from "../images/projects/conference_hall.webp";
 
 export const data = {
     title: "پروژه های تکمیل شده",
