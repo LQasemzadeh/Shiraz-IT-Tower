@@ -21,47 +21,38 @@ const Services = () => {
         {
             img: consulting,
             name: "Dr. Serena Mitchell",
-            specialties: "Orthopedic Surgeon",
         },
         {
             img: cooperation,
-            name: "Dr. Julian Bennett",
-            specialties: "Cardiologist",
+            name: "همکاری با شرکت‌های دانش بنیان",
         },
         {
             img: smsP,
-            name: "Dr. Camila Rodriguez",
-            specialties: "Pediatrician",
+            name: "سامانه پیامکی",
         },
         {
             img: ITTower,
-            name: "Dr. Victor Nguyen",
-            specialties: "Neurologist",
+            name: "برج IT",
         },
         {
             img: web,
-            name: "Dr. Ethan Carter",
-            specialties: "Dermatologist",
+            name: "طراحی وبسایت",
         },
         {
             img: examing,
-            name: "Dr. Olivia Martinez",
-            specialties: "Ophthalmologist",
+            name: "آزمون‌های خصوصی و مجازی",
         },
         {
             img: eximp,
-            name: "Dr. Olivia Martinez",
-            specialties: "Ophthalmologist",
+            name: "صادرات و واردات",
         },
         {
             img: dataCenter,
-            name: "Dr. Olivia Martinez",
-            specialties: "Ophthalmologist",
+            name: "مرکز داده",
         },
         {
             img: informatique,
-            name: "Dr. Olivia Martinez",
-            specialties: "Ophthalmologist",
+            name: "کالاهای انفورماتیک",
         },
     ];
 
@@ -119,20 +110,20 @@ const Services = () => {
                     </div>
                     <div className="flex gap-5 mt-4 lg:mt-0">
                         <button
-                            className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+                            className=" bg-[#ff9500] text-backgroundColor px-4 py-2 rounded-lg active:bg-orange-500"
                             onClick={() => slider.current.slickPrev()}
                         >
-                            <FaArrowLeft size={25}/>
+                            <FaArrowRight size={16}/>
                         </button>
                         <button
-                            className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+                            className=" bg-[#ff9500] text-backgroundColor px-4 py-2 rounded-lg active:bg-orange-500"
                             onClick={() => slider.current.slickNext()}
                         >
-                            <FaArrowRight size={25}/>
+                            <FaArrowLeft size={16}/>
                         </button>
                     </div>
                 </div>
-                <div className=" mt-5">
+                <div className="mt-5">
                     <Slider ref={slider} {...settings}>
                         {data.map((e, index) => (
                             <div
@@ -148,8 +139,7 @@ const Services = () => {
                                 </div>
 
                                 <div className=" flex flex-col justify-center items-center">
-                                    <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
-                                    <h3 className=" pt-2">{e.specialties}</h3>
+                                    <h1 className=" font-semibold text-lg pt-4">{e.name}</h1>
                                 </div>
                             </div>
                         ))}
