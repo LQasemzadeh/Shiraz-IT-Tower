@@ -32,11 +32,11 @@ const Contact = () => {
                     <ul className="grid grid-cols-2 gap-x-6 mb-12 mx-auto">
                         <li className="flex gap-x-3">
                             071-32344445
-                            <BsTelephone className="h-6 w-5 flex-none text-indigo-600" />
+                            <BsTelephone className="h-6 w-5 flex-none text-orange-600" />
                         </li>
                         <li className="flex gap-x-3">
                             shirazittower1@gmail.com
-                            <MdOutlineMailOutline className="h-6 w-5 flex-none text-indigo-600" />
+                            <MdOutlineMailOutline className="h-6 w-5 flex-none text-orange-600" />
                         </li>
                     </ul>
                     <div>
@@ -48,8 +48,8 @@ const Contact = () => {
                                 render={({ field }) => (
                                     <FormElement
                                         type="text"
-                                        label="Name"
-                                        placeholder="Enter name here ..."
+                                        label="نام و نام خانوادگی"
+                                        placeholder="نام خود را وارد کنید ..."
                                         fieldRef={field}
                                         hasError={errors.name?.type === 'required'}
                                     />
@@ -57,14 +57,14 @@ const Contact = () => {
                             />
 
                             <Controller
-                                name="name"
+                                name="email"
                                 control={control}
                                 rules={{ required: true }}
                                 render={({ field }) => (
                                     <FormElement
-                                        type="text"
-                                        label="Name"
-                                        placeholder="Enter name here ..."
+                                        type="email"
+                                        label="ایمیل"
+                                        placeholder="ایمیل خود را وارد کنید ..."
                                         fieldRef={field}
                                         hasError={errors.name?.type === 'required'}
                                     />
@@ -72,21 +72,24 @@ const Contact = () => {
                             />
 
                             <Controller
-                                name="name"
+                                name="message"
                                 control={control}
                                 rules={{ required: true }}
                                 render={({ field }) => (
                                     <FormElement
-                                        type="text"
-                                        label="Name"
-                                        placeholder="Enter name here ..."
+                                        type="textarea"
+                                        label="پیام شما"
+                                        placeholder="پیام خود را بنویسید ..."
                                         fieldRef={field}
                                         hasError={errors.name?.type === 'required'}
                                     />
                                 )}
                             />
 
-
+                            <button type="submit" className="w-full px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
+        hover:bg-transparent hover:text-[#352d22] rounded-full">
+                                ارسال پیام
+                            </button>
                         </form>
                     </div>
                 </div>

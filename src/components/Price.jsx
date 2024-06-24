@@ -59,7 +59,7 @@ const Price = () => {
                                     </ul>
                                 </div>
                                 <div className="mt-5">
-                                    <button className="px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
+                                    <button className="w-full px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
         hover:bg-transparent hover:text-[#352d22] rounded-full">خرید اشتراک
                                     </button>
                                 </div>
@@ -99,7 +99,7 @@ const Price = () => {
                                     </ul>
                                 </div>
                                 <div className="mt-5">
-                                    <button className="px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
+                                    <button className="w-full px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
         hover:bg-transparent hover:text-[#352d22] rounded-full">خرید اشتراک
                                     </button>
                                 </div>
@@ -139,7 +139,7 @@ const Price = () => {
                                     </ul>
                                 </div>
                                 <div className="mt-5">
-                                    <button className="px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
+                                    <button className="w-full px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]
         hover:bg-transparent hover:text-[#352d22] rounded-full">خرید اشتراک
                                     </button>
                                 </div>

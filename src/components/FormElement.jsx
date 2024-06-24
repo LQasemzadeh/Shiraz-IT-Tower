@@ -1,5 +1,5 @@
 const FormElement = ({type, label, placeholder, fieldRef, hasError}) => {
-    const classes = 'form-control w-full px-3 py-1.5 text-gray-700 rounded border border-solid border-gray-300 focus:border-pink-600 focus:outline-none';
+    const classes = 'form-control w-full px-3 py-1.5 text-gray-700 rounded border border-solid border-gray-300 focus:border-orange-600 focus:outline-none';
 
     return (
         <div className="form-group mb-6">
