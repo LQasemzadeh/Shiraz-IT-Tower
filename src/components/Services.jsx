@@ -20,7 +20,7 @@ const Services = () => {
     const data = [
         {
             img: consulting,
-            name: "Dr. Serena Mitchell",
+            name: "مشاوره در حوزه فناوری اطلاعات",
         },
         {
             img: cooperation,
@@ -32,7 +32,7 @@ const Services = () => {
         },
         {
             img: ITTower,
-            name: "برج IT",
+            name: "مدیریت برج فناوری اطلاعات شیراز",
         },
         {
             img: web,
@@ -40,7 +40,7 @@ const Services = () => {
         },
         {
             img: examing,
-            name: "آزمون‌های خصوصی و مجازی",
+            name: "برگزاری آزمون‌های خصوصی و مجازی",
         },
         {
             img: eximp,
@@ -52,7 +52,7 @@ const Services = () => {
         },
         {
             img: informatique,
-            name: "کالاهای انفورماتیک",
+            name: "صادرات و واردات کالاهای انفورماتیک",
         },
     ];
 
@@ -98,10 +98,10 @@ const Services = () => {
 
     return (
         <div>
-            <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-16">
+            <div className="min-h-10 flex flex-col justify-center lg:px-32 px-5 py-24">
                 <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
                     <div>
-                        <h1 className=" text-2xl font-semibold text-center lg:text-start">
+                        <h1 className=" text-3xl font-semibold text-center lg:text-start">
                             خدمات
                         </h1>
                         <p className=" mt-2 text-center lg:text-start">
