@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Home from "./pages/Home.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
             <div>
                 <Navbar />
                 <Home />
+                <Footer />
             </div>
         </Router>
     );

@@ -4,6 +4,7 @@ import FormElement from "../../src/components/FormElement.jsx";
 import { BsTelephone } from "react-icons/bs";
 import { MdOutlineMailOutline } from "react-icons/md";
 
+
 const Contact = () => {
     const {
         control,
@@ -20,10 +21,10 @@ const Contact = () => {
         <div className="xl:container mx-auto mb-32">
             <div className="flex justify-center"
                  style={{
-                     background: 'radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(252,70,107,1)',
+                     background: 'radial-gradient(circle, rgba(0,0,0,1) 10%, rgb(194 65 12)',
                      height: '250px',
                  }}>
-                <h1 className="text-5xl sm:text-7xl text-white pt-12">
+                <h1 className="text-4xl sm:text-5xl text-white pt-12">
                     ارتباط با ما
                 </h1>
             </div>

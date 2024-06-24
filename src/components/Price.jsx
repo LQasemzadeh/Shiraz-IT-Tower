@@ -6,11 +6,11 @@ import smspanel from "../../src/assets/images/smspanel.webp";
 const Price = () => {
     return (
         <div className="isolate overflow-hidden bg-gray-900">
-            <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
+            <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-28 lg:px-8">
                 <div className="mx-auto max-w-4xl">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-400">انتخاب پنل پیامکی مناسب</h2>
+                    <h2 className="text-4xl font-semibold leading-7 text-orange-500">انتخاب پنل پیامکی مناسب</h2>
                 </div>
-                <div className="relative mt-6">
+                <div className="relative mt-8">
                     <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
                         سرويس‌های پیام‌دهی تحت وب با واسط کاربری ساده و کارآمد برای سازمان‌ها و شرکت‌ها
                     </p>
