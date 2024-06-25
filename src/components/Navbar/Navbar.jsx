@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import "../../components/Navbar/Navbar.css";
 
 
+
 const Navbar = () => {
     const Menus = ['پنل پیامکی', 'پنل مدیریت ساختمان', 'پنل پرداخت یاری']
     const [open, setOpen] = useState(false);
@@ -35,12 +36,12 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <img src={Logo} className="h-8 w-auto"/>
                     <ul className="hidden md:flex">
-                        <li className="p-4 rounded hover:bg-orange-100"><Link to="/">خانه</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100"><Link to="/projects">پروژه‌ها</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100"><Link to="/services">خدمات</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100"><Link to="/news">اخبار</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100"><Link to="/about">درباره ما</Link></li>
-                        <li className="p-4 rounded  hover:bg-orange-100"><Link to="/contact">تماس با ما</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/">خانه</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Projects">پروژه‌ها</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Services">خدمات</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/news">اخبار</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Hero">درباره ما</Link></li>
+                        <li className="p-4 rounded  hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Contact">تماس با ما</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:flex pr-4">
@@ -81,10 +82,10 @@ const Navbar = () => {
                     <Link to="/">خانه</Link>
                 </li>
                 <li className="p-4 border-b-2 border-zinc-300 w-full text-center">
-                    <Link to="/projects">پروژه‌ها</Link>
+                    <Link to="/Projects">پروژه‌ها</Link>
                 </li>
                 <li className="p-4 border-b-2 border-zinc-300 w-full text-center">
-                    <Link to="/services">خدمات</Link>
+                    <Link to="/Services">خدمات</Link>
                 </li>
                 <li className="p-4 border-b-2 border-zinc-300 w-full text-center">
                     <Link to="/news">اخبار</Link>
@@ -93,7 +94,7 @@ const Navbar = () => {
                     <Link to="/about">درباره ما</Link>
                 </li>
                 <li className="p-4 border-b-2 border-zinc-300 w-full text-center">
-                    <Link to="/contact">تماس با ما</Link>
+                    <Link to="/Contact">تماس با ما</Link>
                 </li>
                 <div className="flex flex-col my-4">
                     <button className="px-5 py-1 text-white border-2 bg-[#ff9500] border-[#352d22]

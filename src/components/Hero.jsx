@@ -12,23 +12,26 @@ const Hero = () => {
 
     return (
         <div
-            className={`flex bg-zinc-200 lg:flex-row lg:items-center flex-col items-start px-4 py-28 relative overflow-hidden md:px-16`}>
+            className={`flex bg-gradient-to-b from-blue-300 to-white lg:flex-row lg:items-center flex-col items-start px-4 py-28 relative overflow-hidden md:px-16`}>
             <div
                 className="flex flex-col gap-4 lg:w-1/2 justify-center lg:items-start lg:mx-10 lg:text-right w-full items-center text-center mb-5 md:mb-0">
                 <h1
                     data-aos="fade-down"
                     className='md:text-2xl text-lg mx-auto lg:mx-0 font-bold leading-tight text-navy'>
-                    <span style={{color: "#304e70"}}>{name}!</span>
+                    <span style={{color: "#152f4d"}}>{name}!</span>
                 </h1>
                 <p data-aos="fade-down"
                    className='leading-normal md:text-lg text-lg text-navy'>{businessImproveMessage}</p>
                 <button
                     data-aos="fade-down"
-                    className='mt-8 text-base rounded-full text-white font-bold py-2 px-6 focus:outline-none md:w-2/5 lg:w-1/2 2xl:w-2/5'
+                    className='mt-8 text-base rounded-full text-white font-bold py-2 px-6 focus:outline-none md:w-2/5 lg:w-1/2 2xl:w-2/5 hover:scale-110 transition-transform duration-200 ease-in-out'
                     style={window.innerWidth > 767 ? {
                         backgroundColor: "#304e70",
                         boxShadow: "0px 10px 20px rgba(78, 112, 149, 0.8)"
-                    } : {backgroundColor: "#304e70", boxShadow: "0px 5px 20px rgba(78, 112, 149, 0.8)"}}>
+                    } : {
+                        backgroundColor: "#304e70",
+                        boxShadow: "0px 5px 20px rgba(78, 112, 149, 0.8)"
+                    }}>
                     بیشتر بخوانید
                 </button>
 

@@ -7,7 +7,7 @@ import Services from "../components/Services.jsx";
 import Contact from "../components/Contact.jsx";
 
 
-const Home = () => {
+const HomePage = () => {
 
     return (
         <div>
@@ -22,4 +22,4 @@ const Home = () => {
         </div>
     );
 };
-export default Home;
+export default HomePage;
