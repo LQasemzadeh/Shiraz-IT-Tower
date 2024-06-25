@@ -21,14 +21,14 @@ const Contact = () => {
         <div className="xl:container mx-auto mb-32">
             <div className="flex justify-center"
                  style={{
-                     background: 'radial-gradient(circle, rgba(0,0,0,1) 10%, rgb(194 65 12)',
+                     background: 'linear-gradient(to bottom, #4b6993, #e9a246)',
                      height: '250px',
                  }}>
-                <h1 className="text-4xl sm:text-5xl text-white pt-12">
+                <h1 data-aos="fade-down" className="text-4xl sm:text-5xl text-white pt-12">
                     ارتباط با ما
                 </h1>
             </div>
-            <div className="px-4 sm:w-2/3 lg:w-1/2 mx-auto">
+            <div data-aos="fade-up" className="px-4 sm:w-2/3 lg:w-1/2 mx-auto">
                 <div className="rounded-lg shadow-lg bg-white -mt-24 py-10 md:py-12 px-4 md:px-6">
                     <ul className="grid grid-cols-2 gap-x-6 mb-12 mx-auto">
                         <li className="flex gap-x-3">

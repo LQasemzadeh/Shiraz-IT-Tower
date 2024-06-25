@@ -5,10 +5,10 @@ import smspanel from "../../src/assets/images/smspanel.webp";
 
 const Price = () => {
     return (
-        <div className="isolate overflow-hidden bg-gray-900">
-            <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-28 lg:px-8">
+        <div className="isolate overflow-hidden bg-gradient-to-b from-blue-950 to-orange-400">
+            <div data-aos="fade-down" className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-28 lg:px-8">
                 <div className="mx-auto max-w-4xl">
-                    <h2 className="text-4xl font-semibold leading-7 text-orange-500">انتخاب پنل پیامکی مناسب</h2>
+                    <h2 className="text-3xl font-bold leading-7 text-orange-500">انتخاب پنل پیامکی مناسب</h2>
                 </div>
                 <div className="relative mt-8">
                     <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
@@ -21,14 +21,14 @@ const Price = () => {
                         src={smspanel} alt="برج الکترونیک شیراز" />
                 </div>
             </div>
-            <div className="flow-root bg-white pb-24 sm:pb-32">
+            <div data-aos="fade-up" className="flow-root bg-white pb-24 sm:pb-32">
                 <div className="-mt-80">
                     <div className="mx-auto max-w-7xl px-6 lg:px-8">
                         <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-3">
                             <div
                                 className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
                                 <div>
-                                    <h3 className="text-sm font-semibold leading-7 text-indigo-600">
+                                    <h3 className="text-sm font-semibold leading-7 text-orange-600">
                                         ویژه کسب و کارهای در حال رشد
                                     </h3>
                                     <div className="mt-4 flex items-baseline gap-x-2">
@@ -68,7 +68,7 @@ const Price = () => {
                             <div
                                 className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
                                 <div>
-                                    <h3 className="text-sm font-semibold leading-7 text-indigo-600">
+                                    <h3 className="text-sm font-semibold leading-7 text-orange-600">
                                         ویژه کسب و کارهای در حال رشد
                                     </h3>
                                     <div className="mt-4 flex items-baseline gap-x-2">
@@ -108,7 +108,7 @@ const Price = () => {
                             <div
                                 className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
                                 <div>
-                                    <h3 className="text-sm font-semibold leading-7 text-indigo-600">
+                                    <h3 className="text-sm font-semibold leading-7 text-orange-600">
                                         ویژه کسب و کارهای در حال رشد
                                     </h3>
                                     <div className="mt-4 flex items-baseline gap-x-2">

@@ -12,7 +12,7 @@ const Hero = () => {
 
     return (
         <div
-            className={`flex bg-gradient-to-b from-blue-300 to-white lg:flex-row lg:items-center flex-col items-start px-4 py-28 relative overflow-hidden md:px-16`}>
+            className={`flex bg-gradient-to-b from-blue-200 to-white lg:flex-row lg:items-center flex-col items-start px-4 py-28 relative overflow-hidden md:px-16`}>
             <div
                 className="flex flex-col gap-4 lg:w-1/2 justify-center lg:items-start lg:mx-10 lg:text-right w-full items-center text-center mb-5 md:mb-0">
                 <h1

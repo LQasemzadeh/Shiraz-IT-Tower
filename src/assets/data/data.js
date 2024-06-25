@@ -4,7 +4,7 @@ import datacenter from "../../assets/images/projects/data-center.webp";
 import conference from "../images/projects/conference_hall.webp";
 
 export const data = {
-    title: "پروژه های تکمیل شده",
+    title: "پروژه‌های تکمیل شده",
     subTitle:
         "ما یک تیم با تجربه از پرسنل تولید و بازرسی برای اطمینان از کیفیت داریم.",
     accordionData: [

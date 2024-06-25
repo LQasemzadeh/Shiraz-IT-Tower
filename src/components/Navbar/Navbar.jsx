@@ -36,12 +36,12 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <img src={Logo} className="h-8 w-auto"/>
                     <ul className="hidden md:flex">
-                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/">خانه</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Projects">پروژه‌ها</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Services">خدمات</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/news">اخبار</Link></li>
-                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Hero">درباره ما</Link></li>
-                        <li className="p-4 rounded  hover:bg-orange-100 hover:bg-opacity-30"><Link to="/Contact">تماس با ما</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-40"><Link to="/">خانه</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-40"><Link to="/Projects">پروژه‌ها</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-40"><Link to="/Services">خدمات</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-40"><Link to="/news">اخبار</Link></li>
+                        <li className="p-4 rounded hover:bg-orange-100 hover:bg-opacity-40"><Link to="/Hero">درباره ما</Link></li>
+                        <li className="p-4 rounded  hover:bg-orange-100 hover:bg-opacity-40"><Link to="/Contact">تماس با ما</Link></li>
                     </ul>
                 </div>
                 <div className="hidden md:flex pr-4">

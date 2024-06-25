@@ -10,14 +10,14 @@ const Projects = () => {
 
     return (
         <div>
-            <div className="m-auto md:px-16 px-4 text-gray-500">
+            <div className="m-auto md:px-16 px-5 py-16 text-black">
                 {/*header text*/}
-                <div className="text-center mx-auto max-w-screen-lg">
-                    <h1 className='font-bold text-navy my-3 md:text-3xl text-2xl'>{data.title}</h1>
-                    <p className="font-normal leading-relaxed lg:text-xs text-xs">{data.subTitle}</p>
+                <div data-aos="fade-down" className="text-center mx-auto">
+                    <h1 className='text-3xl font-semibold text-center lg:text-start'>{data.title}</h1>
+                    <p className="mt-4 text-center lg:text-start">{data.subTitle}</p>
                 </div>
                 {/*Accordion*/}
-                <div className='flex items-center justify-center mx-auto my-16'>
+                <div data-aos="fade-up" className='flex items-center justify-center mx-auto my-16'>
                     <div className='flex gap-3 lg:flex-row flex-col w-full h-full'>
                         {data.accordionData.map(({id, title, subtitle, img, colorDeep, colorLite}) => (
                             <div

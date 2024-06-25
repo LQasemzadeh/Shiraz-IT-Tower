@@ -5,6 +5,7 @@ import Projects from "../components/Projects.jsx";
 import Price from "../components/Price.jsx";
 import Services from "../components/Services.jsx";
 import Contact from "../components/Contact.jsx";
+import News from "../components/News.jsx";
 
 
 const HomePage = () => {

@@ -96,24 +96,26 @@ const Services = () => {
     };
 
     return (
-        <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-16">
+        <div className="flex flex-col justify-center lg:px-32 px-5 py-16">
             <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
-                <div>
-                    <h1 className=" text-4xl font-semibold text-center lg:text-start">
+                <div data-aos="fade-down">
+                    <h1 className="text-3xl font-semibold text-center lg:text-start">
                         خدمات
                     </h1>
-                    <p className=" mt-2 text-center lg:text-start">
+                    <p className="mt-2 text-center lg:text-start">
                         زمینه های فعالیت شرکت
                     </p>
                 </div>
                 <div className="flex gap-5 mt-4 lg:mt-0">
                     <button
+                        data-aos="fade-down"
                         className=" bg-orange-400 text-backgroundColor px-4 py-2 rounded-lg active:bg-orange-500"
                         onClick={() => slider.current.slickPrev()}
                     >
                         <FaArrowRight size={12}/>
                     </button>
                     <button
+                        data-aos="fade-down"
                         className=" bg-orange-400 text-backgroundColor px-4 py-2 rounded-lg active:bg-orange-500"
                         onClick={() => slider.current.slickNext()}
                     >
@@ -121,11 +123,11 @@ const Services = () => {
                     </button>
                 </div>
             </div>
-            <div className=" mt-5">
+            <div data-aos="fade-up" className=" mt-5">
                 <Slider ref={slider} {...settings}>
                     {data.map((e, index) => (
                         <div
-                            className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+                            className="h-[300px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
                             key={index}
                         >
                             <div>
