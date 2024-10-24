@@ -97,7 +97,7 @@ const Services = () => {
 
     return (
         <div className="flex flex-col justify-center lg:px-32 px-5 py-16">
-            <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
+            <div className="flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
                 <div data-aos="fade-down">
                     <h1 className="text-3xl font-semibold text-center lg:text-start">
                         خدمات
